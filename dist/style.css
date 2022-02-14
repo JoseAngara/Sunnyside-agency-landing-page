@@ -171,6 +171,11 @@ h6 {
   margin: 2em 0;
   margin-bottom: 1em;
 }
+@media (max-width: 340px) {
+  .main-header__head {
+    font-size: 2.8em;
+  }
+}
 @media (min-width: 768px) {
   .main-header {
     grid-column: 1/-1;
@@ -365,11 +370,12 @@ h6 {
 .footer__nav ul {
   padding: 0;
   display: flex;
+  justify-content: space-around;
+  min-width: 320px;
   margin-bottom: 80px;
 }
 .footer__nav li {
   list-style: none;
-  margin: 0 40px;
 }
 .footer__nav a {
   color: #25564b;

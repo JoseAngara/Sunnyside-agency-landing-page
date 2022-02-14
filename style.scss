@@ -162,6 +162,9 @@ body {
         color: $base-color;
         margin: 2em 0;
         margin-bottom: 1em;
+        @media (max-width: 340px) {
+            font-size: 2.8em;
+        }
     }
 
     @media (min-width: 768px) {
@@ -352,11 +355,12 @@ body {
         ul {
             padding: 0;
             display: flex;
+            justify-content: space-around;
+            min-width: 320px;
             margin-bottom: 80px;
         }
         li {
             list-style: none;
-            margin: 0 40px;
         }
         a {
             color: $graphic-design-text-color;
