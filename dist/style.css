@@ -299,17 +299,22 @@ h6 {
 }
 .text-container--background {
   width: 70%;
-  padding: 40px 20px;
+  padding: 0;
   position: absolute;
   bottom: 0;
   margin: auto;
 }
-.text-container--background .text-container__head {
-  text-align: center;
-  font-size: 2em;
-}
-.text-container--background .text-container__p {
-  margin: 20px 0;
+@media (min-width: 768px) {
+  .text-container--background {
+    padding: 40px 20px;
+  }
+  .text-container--background .text-container__head {
+    text-align: center;
+    font-size: 2em;
+  }
+  .text-container--background .text-container__p {
+    margin: 20px 0;
+  }
 }
 
 .testimonials {

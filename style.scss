@@ -278,16 +278,19 @@ body {
     }
     &--background {
         width: 70%;
-        padding: 40px 20px;
+        padding: 0;
         position: absolute;
         bottom: 0;
         margin: auto;
-        .text-container__head {
-            text-align: center;
-            font-size: 2em;
-        }
-        .text-container__p {
-            margin: 20px 0;
+        @media (min-width: 768px) {
+            padding: 40px 20px;
+            .text-container__head {
+                text-align: center;
+                font-size: 2em;
+            }
+            .text-container__p {
+                margin: 20px 0;
+            }
         }
     }
 }
