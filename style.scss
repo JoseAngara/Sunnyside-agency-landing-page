@@ -203,6 +203,9 @@ body {
     justify-content: center;
     align-items: center;
     padding: 60px 20px;
+    @media (min-width: 768px) {
+        padding:60px 80px;
+    }
     &--transform {
         @media (min-width: 768px) {
             grid-column: 1;
@@ -213,6 +216,10 @@ body {
         font-size: 2em;
         text-align: center;
         color: $text-container-header-color;
+        @media (min-width: 768px) {
+            font-size:2.5em;
+            text-align: left;
+        }
         &--graphic-design {
             color: $graphic-design-text-color;
         }
@@ -224,11 +231,16 @@ body {
         text-align: center;
         margin: 25px 0;
         color: $text-container-p-color;
+        @media (min-width: 768px) {
+            text-align: left;
+        }
         &--graphic-design {
             color: $graphic-design-text-color;
+            text-align: center;
         }
         &--photography {
             color: $photography-text-color;
+            text-align: center;
         }
         &--margin-top {
             margin-top:35px;
@@ -265,11 +277,18 @@ body {
         }
     }
     &--background {
-        width: 65%;
-        padding-bottom: 40px;
+        width: 70%;
+        padding: 40px 20px;
         position: absolute;
         bottom: 0;
-        margin: auto
+        margin: auto;
+        .text-container__head {
+            text-align: center;
+            font-size: 2em;
+        }
+        .text-container__p {
+            margin: 20px 0;
+        }
     }
 }
 
